@@ -1,7 +1,7 @@
 import MySQLdb
 
 class InvestDao:
-    def __init__(self, host, port, user, passwd, db):
+    def __init__(self, host="172.17.0.1", port=3306, user="michal", passwd="michal12", db="invest_data"):
         self.conn = MySQLdb.connect(host=host, port=port, user=user, passwd=passwd, db=db)
 
     def sql(self, query):
